@@ -1,4 +1,5 @@
 import React from "react"
+import '../styles/globals.css'
 import { wrapper } from "../store"
 
 const MyApp = ({ Component, pageProps}) => (

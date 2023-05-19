@@ -1,54 +1,28 @@
 import React from 'react'
+import styles from './nav.module.css'
+import Image from 'next/image'
+import logo from '../static/logos/baserunner.svg'
+
 import Link from 'next/link'
 
 const links = [,
-  { href: '/player', label: 'Player' },
+  // { href: '/player', label: 'Player' },
+  { href: '/games/game-tracker', label: 'Start Game' }
 ].map(link => ({
   ...link,
   key: `nav-link-${link.href}-${link.label}`,
 }))
 
 const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link href="/">
-          <div>Home</div>
-        </Link>
-      </li>
+  <nav className={styles.nav}>
+    <Image src={logo} alt="Logo" width={100} height={100} />
+    <ul className={styles.navUl}>
       {links.map(({ key, href, label }) => (
         <Link href={href} key={key}>
           <div>{label}</div>
         </Link>
       ))}
     </ul>
-
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
   </nav>
 )
 

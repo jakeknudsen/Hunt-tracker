@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function FirstPost() {
+export default function GameTracker() {
     return (
     <>
-    <h1>First Game</h1>
+    <h1>Start Game</h1>
     <button><Link href="/">end game</Link></button>
     </>
     );
