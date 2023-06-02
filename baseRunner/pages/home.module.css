@@ -3,3 +3,38 @@
     flex-direction: column;
     align-items: center;
 }
+
+.primaryBtn {
+    display: flex;
+    width: 250px;
+    height: 35px;
+    justify-content: center;
+    font-size: 22px;
+    margin: 10px;
+    background-color: #4681f4;
+    border-radius: 50px;
+    border: solid 1px #4681f4;
+    align-items: center;
+
+}
+
+.secondaryBtn {
+    display: flex;
+    width: 250px;
+    height: 35px;
+    justify-content: center;
+    font-size: 22px;
+    margin: 10px;
+    background-color: #dd7973;
+    border-radius: 50px;
+    border: solid 1px #dd7973;
+    align-items: center;
+}
+
+.homeBtnContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+

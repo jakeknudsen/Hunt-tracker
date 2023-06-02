@@ -3,9 +3,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write \"**/*.{js,jsx}\""
+
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "next": "latest",
     "next-redux-wrapper": "^8.1.0",
     "react": "18.2.0",
@@ -14,5 +17,9 @@
     "redux": "^4.2.1",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.2"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "prettier": "^2.8.8"
   }
 }
